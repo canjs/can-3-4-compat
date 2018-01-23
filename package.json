@@ -1,6 +1,6 @@
 {
   "name": "can-3-4-compat",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
   "homepage": "",
   "repository": {
@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "can-component": "^4.0.0-pre.28",
-		"can-stache": "^4.0.0-pre.53",
+    "can-stache": "^4.0.0-pre.53",
     "jshint": "^2.9.1",
     "steal": "^1.6.2",
     "steal-qunit": "^1.0.1",
