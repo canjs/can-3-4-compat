@@ -39,7 +39,7 @@
     "steal": "^1.6.2",
     "steal-qunit": "^1.0.1",
     "steal-tools": "^1.10.0",
-    "testee": "^0.3.0"
+    "testee": "^0.7.0"
   },
   "license": "MIT"
 }
