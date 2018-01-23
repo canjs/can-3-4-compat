@@ -1,0 +1,45 @@
+{
+  "name": "can-3-4-compat",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com//can-3-4-compat.git"
+  },
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "scripts": {
+    "preversion": "npm test",
+    "version": "git commit -am \"Update version number\" && git checkout -b release",
+    "postpublish": "git push --tags && git checkout master && git branch -D release && git push",
+    "testee": "testee test.html --browsers firefox",
+    "test": "npm run jshint && npm run testee",
+    "jshint": "jshint ./*.js --config",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish"
+  },
+  "main": "can-3-4-compat.js",
+  "keywords": [
+    "",
+    "donejs-plugin"
+  ],
+  "dependencies": {
+    "can-dom-events": "<2.0.0",
+    "can-dom-mutate": "<2.0.0"
+  },
+  "devDependencies": {
+    "can-component": "^4.0.0-pre.28",
+		"can-stache": "^4.0.0-pre.53",
+    "jshint": "^2.9.1",
+    "steal": "^1.6.2",
+    "steal-qunit": "^1.0.1",
+    "steal-tools": "^1.10.0",
+    "testee": "^0.3.0"
+  },
+  "license": "MIT"
+}
