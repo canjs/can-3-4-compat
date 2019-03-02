@@ -1,30 +1,28 @@
 # can-3-4-compat
 
-[![Build Status](https://travis-ci.org//can-3-4-compat.svg?branch=master)](https://travis-ci.org//can-3-4-compat)
+[![Join our Slack](https://img.shields.io/badge/slack-join%20chat-611f69.svg)](https://www.bitovi.com/community/slack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join our Discourse](https://img.shields.io/discourse/https/forums.bitovi.com/posts.svg)](https://forums.bitovi.com/?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/canjs/can-3-4-compat/blob/master/LICENSE)
+[![npm version](https://badge.fury.io/js/can-3-4-compat.svg)](https://www.npmjs.com/package/can-3-4-compat)
+[![Travis build status](https://travis-ci.org/canjs/can-3-4-compat.svg?branch=master)](https://travis-ci.org/canjs/can-3-4-compat)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/canjs/can-3-4-compat?branch=master&svg=true)](https://ci.appveyor.com/project/matthewp/can-3-4-compat)
+[![Coverage status](https://coveralls.io/repos/github/canjs/can-3-4-compat/badge.svg?branch=master)](https://coveralls.io/github/canjs/can-3-4-compat?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/canjs/can-3-4-compat.svg)](https://greenkeeper.io/)
 
 Utilities for easing the upgrade from CanJS 3 to CanJS 4.
 
-## Modules
+## Documentation
 
-### can-3-4-compat/dom-mutation-events
+Read the [can-3-4-compat API docs on CanJS.com](https://canjs.com/doc/can-3-4-compat.html).
 
-This module enables the legacy mutation events __inserted__ and __removed__ in places such as can-components.
+## Changelog
 
-```js
-import "can-3-4-compat/dom-mutation-events";
-import Component from "can-component";
+See the [latest releases on GitHub](https://github.com/canjs/can-3-4-compat/releases).
 
-Component.extend({
-	tag: "some-component",
+## Contributing
 
-	events: {
-		inserted: function(){
-			// This will fire!
-		}
-	}
-})
-```
+The [contribution guide](https://github.com/canjs/can-3-4-compat/blob/master/CONTRIBUTING.md) has information on getting help, reporting bugs, developing locally, and more.
 
-## license
+## License
 
-MIT
+[MIT](https://github.com/canjs/can-3-4-compat/blob/master/LICENSE)
