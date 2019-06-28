@@ -12,9 +12,9 @@ QUnit.test('Inserted event is fired', function(assert){
 		tag: "some-component",
 		events: {
 			inserted: function(el, ev){
-				QUnit.ok(true, "inserted was called");
-				QUnit.equal(el.tagName, "SOME-COMPONENT");
-				QUnit.ok(ev, "got an event");
+				assert.ok(true, "inserted was called");
+				assert.equal(el.tagName, "SOME-COMPONENT");
+				assert.ok(ev, "got an event");
 				done();
 			}
 		}
